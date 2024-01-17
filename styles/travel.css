@@ -15,13 +15,21 @@ nav {
     margin-right: 10px;
 }
 
-.logo-section .Treck,
-.logo-section .Nest {
+.logo-section .Treck
+ {
     color: #131318;
     font-family: 'Mulish', sans-serif;
     font-size: 36px;
     font-weight: 800;
     line-height: normal;
+}
+.logo-section .Nest{
+    color: #FF5400;
+font-family: Mulish;
+font-size: 36px;
+font-style: normal;
+font-weight: 800;
+line-height: normal;
 }
 
 h1 {
@@ -108,8 +116,70 @@ p {
     cursor: pointer;
 }
 
+
+/* Existing styles (header, banner, etc.) */
+
+/* Popular Features section */
+.popular-features {
+    background: #f4f4f4;
+    padding: 40px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.popular-features .content {
+    max-width: 600px;
+}
+
+.popular-features h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.popular-features p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.popular-features ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Display list items horizontally */
+    flex-direction: column; /* Change direction to vertical */
+}
+
+.popular-features li {
+    font-size: 1em;
+    margin-bottom: 10px; /* Adjust spacing between list items */
+    color: #666;
+}
+
+.popular-features .read-more-btn {
+    margin-top: 10px; /* Adjust spacing between list and button */
+    padding: 10px 20px;
+    border-radius: 8px;
+    background: #FF5400;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.feature-image {
+    max-width: 400px;
+    margin-left: -20px; /* Adjust the margin as needed */
+}
+
+.feature-image img {
+    width: 100%;
+    border-radius: 8px;
+}
+
 /* Media queries for responsiveness */
-@media  (max-width: 576px) {
+@media screen and  (max-width: 576px) {
     .search-form {
         flex-direction: column;
     }
@@ -117,5 +187,16 @@ p {
     .input-field {
         flex: none; 
         width: 100%; 
+    }
+    .popular-features .content {
+        max-width: 100%;
+    }
+    
+    .popular-features ul {
+        align-items: center;
+    }
+
+    .popular-features li {
+        text-align: center;
     }
 }
