@@ -216,13 +216,158 @@ p {
     max-width: 100%; 
     border-radius: 8px;
 }
+/* Why Choose Us section */
+.why-choose-us {
+    padding: 40px 0;
+    background: #f4f4f4; /* Adjust background color as needed */
+    display: flex;
+    flex-direction: column; /* Stack the children vertically */
+    align-items: center; /* Center children horizontally */
+    text-align: center; /* Center text content */
+}
+
+.why-choose-us .section-title {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.why-choose-us .text-light-gray {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.why-choose-us-card-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%; /* Ensure the cards take the full width */
+    max-width: 1200px; /* Adjust the maximum width as needed */
+    margin-top: 20px; /* Add some top margin for better spacing */
+}
+
+.why-choose-us .card {
+    flex: 0 0 calc(25% - 20px); /* Set width for each card with margin between them */
+    background: #fff;
+    padding: 20px;
+    margin-bottom: 20px; /* Add some bottom margin for better spacing */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow for a lifted effect */
+    display: flex; /* Make the card a flex container */
+    flex-direction: column; /* Stack child elements vertically */
+    align-items: center; /* Center child elements horizontally */
+}
+
+
+
+.why-choose-us .card h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.why-choose-us .card p {
+    font-size: 1.1em;
+    color: #666;
+}
+/* Newsletter section */
+.newsletter {
+    padding: 40px 0;
+    background: #f4f4f4; /* Adjust background color as needed */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 8px; /* Add border-radius for rounded corners */
+}
+
+/* Newsletter content (title and paragraph) */
+.newsletter-content {
+    border: 2px solid #FF5400; 
+    border-radius: 8px; 
+    padding: 20px; 
+    max-width: 600px; 
+}
+
+.newsletter-title {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.newsletter-text {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    color: #666;
+}
+
+/* Newsletter form */
+.newsletter-form {
+    display: flex;
+    flex-direction: column; /* Stack form elements vertically */
+}
+
+.newsletter-form input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.subscribe-btn {
+    padding: 10px 20px;
+    border-radius: 8px;
+    background: #FF5400;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+/* Newsletter image */
+.newsletter-image img {
+    max-width: 100%; /* Make the image responsive */
+    border-radius: 8px;
+}
+.footer-content {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center;
+}
+
+.footer-logo img {
+    width: 40px;
+    margin-bottom: 10px; /* Add some bottom margin for spacing */
+}
+
+.footer-title {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    display: inline-block; /* Ensure block-level behavior for margin */
+}
+
+.footer-paragraph {
+    font-size: 0.9em;
+    margin-bottom: 20px;
+}
+
+.footer-sponsors {
+    display: flex;
+    justify-content: center; /* Center the sponsor logos */
+}
+
+.footer-sponsors img {
+    width: 60px;
+    margin-right: 10px;
+}
 
 
 
 
 /* Media queries for responsiveness */
 @media screen and  (max-width: 576px) {
-    .search-form  .destination-grid{
+    header{
+        padding: 30px;
+    }
+    .search-form  .destination-grid .newsletter{
         flex-direction: column;
     }
 
@@ -251,5 +396,24 @@ p {
     @media (max-width: 576px) {
         .destination-grid {
             grid-template-columns: 1fr; /* Single column for mobile view */
-        }}
+        }
+
+    
+        .why-choose-us .card {
+            flex: 0 0 100%; 
+            flex-direction: column; 
+            align-items: center; 
+            text-align: center; 
+        }
+        .newsletter {
+            flex-direction: column; /* Stack sections vertically on smaller screens */
+            text-align: center; /* Center text content on smaller screens */
+        }
+        
 }
+.footer-sponsors {
+    margin-top: 10px; /* Add some top margin to the sponsor logos on smaller screens */
+}
+
+}
+
