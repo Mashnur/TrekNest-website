@@ -178,9 +178,51 @@ p {
     border-radius: 8px;
 }
 
+
+
+
+/* Destination List section */
+.destination-list {
+    padding: 40px 0;
+    background: #fff; /* Adjust background color as needed */
+}
+
+.destination-list .content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.destination-list h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.destination-list p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.destination-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two images in the first row */
+    gap: 10px; /* Adjust the gap between images */
+}
+
+.destination-grid img {
+    width: 100%;
+    height: auto; 
+    max-width: 100%; 
+    border-radius: 8px;
+}
+
+
+
+
 /* Media queries for responsiveness */
 @media screen and  (max-width: 576px) {
-    .search-form {
+    .search-form  .destination-grid{
         flex-direction: column;
     }
 
@@ -199,4 +241,15 @@ p {
     .popular-features li {
         text-align: center;
     }
+    .destination-grid {
+        grid-template-columns: repeat(3, 1fr); /* Three images in the second row */
+    }
+
+    .destination-grid img {
+        max-width: calc(100% - 10px); 
+    }
+    @media (max-width: 576px) {
+        .destination-grid {
+            grid-template-columns: 1fr; /* Single column for mobile view */
+        }}
 }
